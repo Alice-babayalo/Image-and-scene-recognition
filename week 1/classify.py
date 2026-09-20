@@ -18,7 +18,7 @@ transform = transforms.Compose([
     ),
 ])
 
-img = Image.open("sample.jpg").convert("RGB")
+img = Image.open("images/sample.jpg").convert("RGB")
 input_tensor = transform(img).unsqueeze(0)
 
 # 3. Run inference
